@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Card</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div id="card-formatter">
+    <form>
+        <label for="bg-color">Choose a background color:</label>
+        <select id="bg-color">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="orange">Orange</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+        </select>
+
+        <label for="font-face">Choose a font:</label>
+        <select id="font-face">
+            <option value="arial">Arial</option>
+            <option value="verdana">Verdana</option>
+            <option value="times new roman">Times New Roman</option>
+            <option value="courier new">Courier New</option>
+            <option value="comic sans ms">Comic Sans MS</option>
+            <option value="impact">Impact</option>
+        </select>
+
+        <div id="radio-buttons">
+            <label>Choose a border style:</label>
+
+            <div>
+                <input type="radio" id="border-style-none" name="border" value="none" checked/>
+                <label for="border-style-none">None</label>
+
+                <input type="radio" id="border-style-double" name="border" value="double"/>
+                <label for="border-style-double">Double</label>
+
+                <input type="radio" id="border-style-solid" name="border" value="solid"/>
+                <label for="border-style-solid">Solid</label>
+            </div>
+        </div>
+
+        <label for="default-picture">Add default picture?</label>
+        <input type="checkbox" id="default-picture"/>
+
+        <br>
+        <label for="greeting-text">Enter the greeting text below:</label>
+        <textarea id="greeting-text"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<div id="birthday-card">
+    <h1 id="birthday-text"></h1>
+    <img id="birthday-img">
+</div>
+
+</body>
+</html>
