@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Employee Registration</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+<h1>Employee Registration</h1>
+<form id="employeeForm">
+    <label for="employeeId">Employee ID:</label>
+    <input id="employeeId" name="employeeId" placeholder="Enter Employee ID" required type="text">
+
+    <label for="employeeName">Name:</label>
+    <input id="employeeName" name="employeeName" placeholder="Enter Full Name" required type="text">
+
+    <label for="department">Department:</label>
+    <select id="department" name="department" required>
+        <option value="">-- Select Department --</option>
+        <option value="HR">HR</option>
+        <option value="Finance">Finance</option>
+        <option value="IT">IT</option>
+        <option value="Marketing">Marketing</option>
+    </select>
+
+    <button type="submit">Add Employee</button>
+</form>
+
+<table id="employeeTable">
+    <thead>
+    <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Department</th>
+    </tr>
+    </thead>
+
+    <tbody></tbody>
+</table>
+</body>
+</html>

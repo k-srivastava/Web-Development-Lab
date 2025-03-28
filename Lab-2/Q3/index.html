@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Bootstrap Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container my-4">
+    <div class="bg-light p-4 rounded shadow-sm mb-4">
+        <h3 class="text-center mb-3">Top Section</h3>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="input-group">Username</span>
+            <input aria-describedby="input-group" aria-label="Username" class="form-control" type="text">
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <span class="badge bg-primary me-2">Primary</span>
+            <span class="badge bg-success me-2">Success</span>
+            <span class="badge bg-danger">Danger</span>
+        </div>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="bg-light p-4 rounded shadow-sm">
+                <h5 class="text-center mb-3">Left Panel</h5>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">@</span>
+                    <input aria-label="Email" class="form-control" placeholder="Email" type="text">
+                </div>
+
+                <div>
+                    <button class="btn btn-outline-primary me-1">Submit</button>
+                    <button class="btn btn-outline-secondary">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="bg-light p-4 rounded shadow-sm">
+                <h5 class="text-center mb-3">Center Panel</h5>
+                <div aria-label="Basic example" class="btn-group mb-3" role="group">
+                    <button class="btn btn-primary" type="button">Left</button>
+                    <button class="btn btn-warning" type="button">Middle</button>
+                    <button class="btn btn-danger" type="button">Right</button>
+                </div>
+
+                <div>
+                    <input class="form-control" placeholder="Enter Text" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="bg-light p-4 rounded shadow-sm">
+                <h5 class="text-center mb-3">Right Panel</h5>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Password</span>
+                    <input class="form-control" placeholder="Enter Your Password" type="password">
+                </div>
+                <button class="btn btn-success w-100">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

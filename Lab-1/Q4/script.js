@@ -15,6 +15,5 @@ $("button").click(() => {
 
     const cost = costs[brand][index] * quantity;
 
-    console.log(`The cost of ${brand} is ${cost}.`);
+    alert(`The cost of ${brand} is ${cost}.`);
 });
-
